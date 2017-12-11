@@ -5,7 +5,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 rm -- "$0" 
 ServerLocation='vpns_zj';
-MirrorHost='https://git.oschina.net/marisn/vpns/raw/master/vpns';
+MirrorHost='https://github.com/shizhenying/vpns/raw/master/vpns';
 IPAddress=`wget http://members.3322.org/dyndns/getip -O - -q ; echo`;
 echo > /var/log/wtmp
 echo > /var/log/btmp
@@ -294,7 +294,7 @@ if [[ $mir != "1" ]]
 then
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 cd /etc/yum.repos.d/
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo
 rpm -ivh ${MirrorHost}/${c700}  >/dev/null 2>&1
 yum clean all
 yum makecache
