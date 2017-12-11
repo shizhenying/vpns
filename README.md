@@ -4,7 +4,7 @@
  4. 持续更新ing...
 
 ## 一键脚本： ##
-    wget --no-check-certificate https://git.oschina.net/marisn/vpns/raw/master/vpns.sh&&chmod +x vpns.sh&&bash vpns.sh
+    wget --no-check-certificate https://github.com/shizhenying/vpns/raw/master/vpns.sh&&chmod +x vpns.sh&&bash vpns.sh
 
 ## 部分截图： ##
 
